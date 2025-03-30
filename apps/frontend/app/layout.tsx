@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { Figtree } from "next/font/google"
 import { cn } from '@/lib/utils'
 import { meta } from '@/lib/constants'
-import { Particles } from '@repo/ui/particles'
+import { GridParticles } from '@repo/ui/particles'
 import { SidebarProvider } from '@/components/ui/sidebar'
 import { AppSidebar } from "@/components/app-sidebar"
 
@@ -31,16 +31,11 @@ export default function RootLayout({
 		<ClerkProvider>
 			<html lang="en" suppressHydrationWarning>
 				<body
-					className={cn(`font-sans selection:bg-teal-400/70 selection:text-white dark:selection:bg-teal-200/20 dark:selection:text-teal-200 antialiased`,
+					className={cn(`font-sans selection:text-white selection:bg-purple-400 dark:selection:bg-purple-300/20 dark:selection:text-purple-300 antialiased`,
 						figtree.variable
 					)}
 				>
-					<Particles
-						quantityDesktop={350}
-						quantityMobile={100}
-						ease={80}
-						color={"#14b8a6"}
-						refresh
+					<GridParticles
 					/>
 					<ThemeProvider
 						attribute="class"

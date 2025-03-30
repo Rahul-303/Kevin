@@ -69,7 +69,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <div className="flex space-between border-2 bg-gray-500/10 focus-within:outline-1 focus-within:outline-teal-300/30 rounded-md pr-2 pl-1">
+            <div className="flex space-between border-2 bg-gray-500/10 focus-within:outline-1 focus-within:outline-purple-300/30 rounded-md pr-2 pl-1">
               <Input
                 className="w-full p-1 placeholder:text-gray-400 focus-visible:ring-0 text-sm border-none ouline-none"
                 placeholder="Search projects..."
@@ -90,10 +90,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenu>
               {Object.keys(projects).length === 0 ? (
                 <div className="flex items-center justify-center">
-                  <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar text-teal-400">
+                  <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar text-purple-400">
                     <GalleryVerticalEnd className="size-4" />
                   </div>
-                  <p className="font-semibold text-center text-teal-400">No projects found</p>
+                  <p className="font-semibold text-center text-purple-400">No projects found</p>
                 </div>
               ) : (
                 Object.keys(projects).sort((a: string, b: string) => new Date(b).getTime() - new Date(a).getTime()).map((date, index) => (

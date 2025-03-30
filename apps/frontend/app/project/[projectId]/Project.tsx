@@ -62,7 +62,7 @@ export const Project: React.FC<{ projectId: string, sessionUrl: string, previewU
                                             <div key={action.id} className="flex border-2 bg-gray-500/10 p-2 rounded-md">
                                                 <div className="flex items-center gap-2">
                                                 <div className="inline-block rounded-full border dark:border-gray-300/20 p-1 h-fit">
-                                                    <div className="w-2 h-2 rounded-full flex-shrink-0 bg-teal-300 dark:bg-teal-300/30" />
+                                                    <div className="w-2 h-2 rounded-full flex-shrink-0 bg-purple-300 dark:bg-purple-300/30" />
                                                 </div>
                                                 <p>{action.content}</p>
                                                 </div>
@@ -74,7 +74,7 @@ export const Project: React.FC<{ projectId: string, sessionUrl: string, previewU
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <form onSubmit={(e) => onSubmit(e)} className="relative w-full border-2 bg-gray-500/10 focus-within:outline-1 focus-within:outline-teal-300/30 rounded-xl">
+                        <form onSubmit={(e) => onSubmit(e)} className="relative w-full border-2 bg-gray-500/10 focus-within:outline-1 focus-within:outline-purple-300/30 rounded-xl">
                             <div className="p-2">
                                 <Textarea
                                     value={prompt}
@@ -86,10 +86,10 @@ export const Project: React.FC<{ projectId: string, sessionUrl: string, previewU
                             <div className="p-2 flex items-center justify-end">
                                 <Button
                                     type="submit"
-                                    className="h-10 w-10 cursor-pointer rounded-full bg-teal-200/10 hover:bg-teal-300/20 flex items-center justify-center"
+                                    className="h-10 w-10 cursor-pointer rounded-full bg-purple-300/10 hover:bg-purple-300/20 flex items-center justify-center"
                                     disabled={!prompt}
                                 >
-                                    <MoveUpRight className="w-10 h-10 text-teal-300/70" />
+                                    <MoveUpRight className="w-10 h-10 text-purple-300/70" />
                                 </Button>
                             </div>
                         </form>

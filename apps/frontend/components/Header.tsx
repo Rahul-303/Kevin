@@ -18,7 +18,7 @@ export const Header = ({ children, className, onClick }: {
 				className="[&_svg:not([class*='size-'])]:size-5 cursor-pointer"
 			/>
 			<Link href="/">
-			   <Image src="/logo.svg" alt="logo" width={25} height={25} />
+			   <Image src="/vercel.svg" alt="logo" width={25} height={25} />
 			</Link>
 			{children && <Button
 				variant="link"

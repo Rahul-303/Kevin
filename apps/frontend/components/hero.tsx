@@ -11,14 +11,14 @@ export const Hero = () => {
 	     animate="visible"
 	   >
               <motion.h1 variants={itemVariants} className="text-center text-3xl font-medium tracking-tighter sm:text-5xl drop-shadow-sm">
-                Bring your imagination to life
+                Bring your ideas to reality
               </motion.h1>
 
               <motion.div variants={itemVariants} className="group flex items-center justify-center">
                 <p
-                  className="mt-4 w-fit rounded-full text-center border border-teal-300/30 dark:border-teal-200/10 font-semibold bg-teal-100 dark:bg-teal-200/5 tracking-wide text-teal-400/80 dark:text-teal-300/70 px-4 py-1 transition-all duration-300 ease-in-out"
+                  className="mt-4 w-fit rounded-full text-center border border-purple-300/30 dark:border-purple-300/10 font-semibold bg-purple-300 dark:bg-purple-300/5 tracking-wide text-purple-400/80 dark:text-purple-300/70 px-4 py-1 transition-all duration-300 ease-in-out"
                 >
-                  Prompt, click generate and watch your app come to life
+                  try pouring your ideas into this promt
                 </p>
               </motion.div>
 	   </motion.div>
